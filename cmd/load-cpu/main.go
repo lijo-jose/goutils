@@ -16,7 +16,7 @@ func main() {
 		fmt.Printf("count %d sleeptime %d\n", count, sleeptime)
 		count++
 		time.Sleep(time.Duration(sleeptime) * time.Millisecond)
-		dat, err := ioutil.ReadFile("./dat.txt")
+		dat, err := ioutil.ReadFile("./cmd/load-cpu/dat.txt")
 		if err != nil {
 			fmt.Println(err)
 			return
